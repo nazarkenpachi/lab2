@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+.rubik-font {
+   font-family: "Rubik", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 400;
+   font-style: normal;
+ }
+
+@font-face{
+	src: url('rdr-font.otf') format('opentype');
+	font-family:'rdr-font';
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   overflow: hidden;
+}
+.top-bottom{
+   width: 100%;
+   min-height: 10vh;
+   position: fixed;
+   z-index: 1000;
+   display: flex;
+   align-items: center;
+
+   background-color:#c6061b;
+}
+#top{
+   top: 0;
+   left: 0;
+   justify-content: space-between;
+}
+
+nav ul{
+   display: flex;
+   height: 5vh;
+   align-items: center;
+}
+
+ul a {
+   font-family: "Rubik", sans-serif;
+   font-size: 1rem;
+   font-weight: 500;
+   color: #fff;
+   text-decoration: none;
+   padding: 8px 15px;
+   transition: all 0.15s ease;
+   border-radius: 10px;
+}
+
+ul li {
+   padding: 10px;
+   list-style: none;
+   margin-left: 10px;
+}
+
+ul a:hover, #current {
+   background-color: #fff;
+   color: black;
+}
+
+#bottom{
+   bottom: 0;
+   left: 0;
+   justify-content: flex-end;
+}
+
+body{
+   height: 100vh;
+   padding-top: 10vh; 
+   padding-bottom: 10vh;
+   
+   background-image: url(flexbox-assets/bg.jpg);
+   background-size: cover; 
+   background-position: center; 
+   background-repeat: no-repeat;
+}
+
+.main{
+   width: 100%;
+   display: flex;
+   height: 100%;
+}
+
+.main div{
+   margin: 5px 20px;
+   display: flex;
+   width: 100%;
+   transition: all 0.3s ease-in;
+}
+
+.first-half div{
+   height: 100%;
+}
+
+.div-1:hover,
+.div-2:hover{
+   background-color: #c6061b;
+}
+
+.background-img {
+   background-size: cover; 
+   background-position: center; 
+   background-repeat: no-repeat;
+}
+
+.div-1:hover { 
+   background-image: url(flexbox-assets/arthur.png);
+}
+
+.div-1 {
+   background-image: url(flexbox-assets/arthur-black.png);
+}
+.div-2:hover { 
+   background-image: url(flexbox-assets/john.png);
+}
+
+.div-2 {
+   background-image: url(flexbox-assets/john-black.png);
+}
+
+.arthur-poster{
+   background-image: url(flexbox-assets/arthur-poster.webp);
+   background-size: cover; 
+   background-position: center; 
+   background-repeat: no-repeat;
+   opacity: 1;
+}
+.john-poster{
+   background-image: url(flexbox-assets/john-poster.webp);
+   background-size: cover; 
+   background-position: center; 
+   background-repeat: no-repeat;
+}
+
+p{
+   font-family: 'rdr-font', sans-serif;
+   font-weight: 500;
+   font-size: 2rem;
+   color: white;
+}
+
+.second-half{
+   flex-direction: column;
+}
+
+.second-half div{
+   height: 100%;
+   position: relative;
+}
+
+.div-3 {
+   flex: 1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: 'rdr-font', sans-serif;
+   color: white;
+   text-shadow: 
+   -4px -4px 0 black,  
+    4px -4px 0 black,
+   -4px  4px 0 black,
+    4px  4px 0 black;
+   font-size: 3rem;
+   font-weight: bold;
+}
+
+.second-bottom-half{
+   display: flex;
+   flex-direction: row;
+}
+
+.second-bottom-half {
+   flex: 2;
+   display: flex;
+}
+
+.div-5 {
+   align-items: center;
+   margin-bottom: 2rem;
+}
+
+.div-4, .div-5 {
+   flex: 1;
+   transition: opacity 0.5s ease;
+   opacity: 0;
+}
+
+ .arthur-poster, .john-poster {
+   transition: opacity 0.5s ease; 
+   opacity: 1; 
+ }
+
+.text-wrapper{
+   color: white;
+   padding: 5px;
+   font-family: 'rdr-font', sans-serif;
+   font-weight: 600;
+   font-size: 3.5rem;
+   text-shadow: 
+   -4px -4px 0 black,  
+    4px -4px 0 black,
+   -4px  4px 0 black,
+    4px  4px 0 black;
+}
+
+#wr-top{
+   margin-left: 2%;
+}
+#wr-bttm{
+   margin-right: 2%;
+}
