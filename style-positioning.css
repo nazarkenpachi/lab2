@@ -111,6 +111,10 @@ body{
 .div-2:hover{
    background-color: #c6061b;
 }
+.div-4:hover,
+.div-5:hover{
+   background-color: #FFD700;
+}
 
 .background-img {
    background-size: cover; 
@@ -131,6 +135,20 @@ body{
 
 .div-2 {
    background-image: url(flexbox-assets/john-black.png);
+}
+
+.background-corona {
+   background-image: url(corona.png);
+   background-size: cover; 
+   background-position: center; 
+   background-repeat: no-repeat;
+}
+
+.background-bigbob {
+   background-image: url(bibob.png);
+   background-size: cover; 
+   background-position: center; 
+   background-repeat: no-repeat;
 }
 
 .second-half{
@@ -161,7 +179,7 @@ body{
 }
 
 .second-bottom-half{
-   height: 100%;
+   height: 70%;
    width: 95%;
    margin-left: 2.5%;
    margin-right: 2.5%;
